@@ -1,17 +1,17 @@
 # StoreManagement
  JEE project
  
- I. Create Product
- II. Update Product
- III. Delete Product
- IV. User Login
- V. Upload to Tomcat directory
- VI. Upload to DB
- VII. View the uploaded files
- VIII. Download the files.
+ . Create Product
+ . Update Product
+ . Delete Product
+ . User Login
+ . Upload to Tomcat directory
+ . Upload to DB
+ . View the uploaded files
+ . Download the files.
  
  
- 
+------
  
 Here I used MySql Database to connect
 
@@ -19,16 +19,27 @@ create 3 tables under the DB you use
 
 -------
 create table USER_ACCOUNT
+
 (
+
 USER_ID BIGINT not null,
+
 USER_NAME VARCHAR(30) not null,
+
 GENDER    VARCHAR(1) not null,
+
 PASSWORD  VARCHAR(30) not null,
+
 IMAGE_DATA LONGBLOB not null,
+
 IMAGE_FILE_NAME VARCHAR(30) not null,
+
 primary key (USER_ID)
+
 );
 
+
+-------
 -- Create table
 create table PRODUCT
 (
