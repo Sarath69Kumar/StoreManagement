@@ -6,8 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Product List</title>
+<link rel="stylesheet" type="text/css" href="CSS/Basic.css">
 </head>
-<body>
+<body background = "Images/SuperBlueBloodMoon_EN-US11881086623_1920x1080.jpg">
 
 	<jsp:include page="_header.jsp"></jsp:include>
 	<jsp:include page="_menu.jsp"></jsp:include>

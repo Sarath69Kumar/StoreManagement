@@ -5,8 +5,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="CSS/Basic.css">
 	</head>
-<body>
+<body background = "Images/WoodPartridge_EN-US11041638655_1920x1080.jpg">
 	<jsp:include page="_header.jsp"></jsp:include>
 	<jsp:include page="_menu.jsp"></jsp:include>
 	
@@ -36,7 +37,7 @@
 		</table>
 	</form>
 	
-	<p style="color:blue;">User Name : tom, password: tom001 or jerry/jerry001</p>
+	<p style="color:blue;">User Name : sarath555,sarath69 password: jerry/jerry001</p>
 	
 	<jsp:include page="_footer.jsp"></jsp:include>
 </body>

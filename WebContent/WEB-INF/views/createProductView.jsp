@@ -5,8 +5,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Create Product</title>
+<link rel="stylesheet" type="text/css" href="CSS/Basic.css">
 </head>
-<body>
+<body background = "Images/MorondavaBaobab_EN-US11363642614_1920x1080.jpg">
 
 	<jsp:include page="_header.jsp"></jsp:include>
 	<jsp:include page="_menu.jsp"></jsp:include>

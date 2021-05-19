@@ -5,8 +5,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Upload Files</title>
+<link rel="stylesheet" type="text/css" href="CSS/Basic.css">
 </head>
-<body>
+<body background = "Images/FallasBonfire_EN-US7115616221_1920x1080.jpg">
 	<jsp:include page="_header.jsp"></jsp:include>
 	<jsp:include page="_menu.jsp"></jsp:include>
 	<h3>Upload Files</h3>
@@ -21,7 +22,7 @@
 		<input type="file" name="file" />	<br/>
 		<input type="file" name="file" />	<br/>
 		Description							<br/>
-		<input type="text" name="description" size="100" />
+		<input type="text" name="description" size="70" />
 		<br/>
 		<br/>
 		<input type="submit" value="Upload" />

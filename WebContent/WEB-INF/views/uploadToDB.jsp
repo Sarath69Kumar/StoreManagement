@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Upload To DB</title>
+<link rel="stylesheet" type="text/css" href="CSS/Basic.css">
 </head>
-<body>
+<body background = "Images/KilchurnSky_EN-US9115024751_1920x1080.jpg">
 	<jsp:include page="_header.jsp"></jsp:include>
 	<jsp:include page="_menu.jsp"></jsp:include>
 		<h3>Upload Files To DB</h3>
@@ -26,7 +27,7 @@
 		<br/>
 		Description:
 		<br/>
-		<input type="text" name="description" size="100" />
+		<input type="text" name="description" size="30" />
 		<br/>
 		<br/>
 		<input type="submit" value="Upload" />

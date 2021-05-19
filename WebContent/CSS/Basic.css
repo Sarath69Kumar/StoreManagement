@@ -1,0 +1,40 @@
+body
+{
+	width: 99%;
+    height: 630px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity:10;
+    color: white;
+}
+
+#header
+{
+	position: fixed;
+    padding: 0px 0px 0px 1px;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 55px;
+}
+
+#menu
+{
+	padding: 100px 10px 0px 10px;
+	font-size: 20px;
+	font-family: cursive;
+    font-weight: bolder;
+	color: chartreuse;
+	margin-top: 0%;
+}
+
+
+#footer
+{
+	position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+    
+}

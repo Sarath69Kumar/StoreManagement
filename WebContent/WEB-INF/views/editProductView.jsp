@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Edit Product</title>
+<link rel="stylesheet" type="text/css" href="CSS/Basic.css">
 </head>
-<body>
+<body background = "Images/AuroraPhotographer_EN-US10752129713_1920x1080.jpg">
 	<jsp:include page="_header.jsp"></jsp:include>
 	<jsp:include page="_menu.jsp"></jsp:include>
 	
