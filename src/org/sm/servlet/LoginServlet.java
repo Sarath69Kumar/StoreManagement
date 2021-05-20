@@ -13,13 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.sm.beans.UserAccount;
+import org.sm.recaptcha.VerifyUtils;
 import org.sm.utils.DBUtils;
 import org.sm.utils.MyUtils;
 
 @WebServlet(urlPatterns = {"/login"})
 public class LoginServlet extends HttpServlet
 {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 958900029856081978L;
 	public LoginServlet()
 	{
 		super();
@@ -52,6 +53,7 @@ public class LoginServlet extends HttpServlet
 		String password = request.getParameter("password");
 		String rememberMeStr = request.getParameter("rememberMe");
 		boolean remember = "Y".equals(rememberMeStr);
+		boolean valid=false;
 		
 		UserAccount user = null;
 		boolean hasError = false;
@@ -75,6 +77,17 @@ public class LoginServlet extends HttpServlet
 					hasError = true;
 					errorString = "User Name or password invalid";
 				}
+				else
+				{
+					String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
+					
+					System.out.println("gRecaptchaResponse = "+gRecaptchaResponse);
+					
+					valid = VerifyUtils.verify(gRecaptchaResponse);
+					
+					if(!valid)
+						errorString = "Captcha invalid";
+				}
 			}
 			catch(SQLException e)
 			{
@@ -92,6 +105,19 @@ public class LoginServlet extends HttpServlet
 			user.setPassword(password);
 			
 			//Store information in request attribute, before forward
+			request.setAttribute("errorString", errorString);
+			request.setAttribute("user", user);
+			
+			//Forward to /WEB-INF/views/login.jsp
+			RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/WEB-INF/views/loginView.jsp");
+			dispatcher.forward(request, response);
+		}
+		
+		/*
+		 * if captcha is invalid, then this will be executed
+		 */
+		else if(!valid)
+		{
 			request.setAttribute("errorString", errorString);
 			request.setAttribute("user", user);
 			
