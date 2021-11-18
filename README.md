@@ -1,21 +1,52 @@
 # StoreManagement
  JEE project
  
+ ![image](https://user-images.githubusercontent.com/59145492/119766270-5c8baf80-bed2-11eb-8f05-345b72f54422.png)
+
+ 
+ . Product List View
+ 
+ ![image](https://user-images.githubusercontent.com/59145492/119766356-7af1ab00-bed2-11eb-9b15-25648489371c.png)
+
+ 
  . Create Product
+ 
+ ![image](https://user-images.githubusercontent.com/59145492/119766384-8a70f400-bed2-11eb-951f-516077629d2f.png)
+
  
  . Update Product
  
+ ![image](https://user-images.githubusercontent.com/59145492/119766417-98bf1000-bed2-11eb-9746-d01385d77504.png)
+ 
  . Delete Product
+ 
+ 
  
  . User Login
  
+ ![image](https://user-images.githubusercontent.com/59145492/119766466-af656700-bed2-11eb-83f1-08774afcdc2e.png)
+
+ ![image](https://user-images.githubusercontent.com/59145492/119766547-d6bc3400-bed2-11eb-82bd-b26163ebd405.png)
+
+ 
  . Upload to Tomcat directory
+ 
+ ![image](https://user-images.githubusercontent.com/59145492/119766562-dde34200-bed2-11eb-9a72-d4ea21b27cdb.png)
+
  
  . Upload to DB
  
+ ![image](https://user-images.githubusercontent.com/59145492/119766570-e3d92300-bed2-11eb-9ee3-5d1a77b2570e.png)
+
+ 
  . View the uploaded files
  
+ 
+ 
  . Download the files.
+ 
+ ![image](https://user-images.githubusercontent.com/59145492/119766647-0703d280-bed3-11eb-9e40-b7a513f75973.png)
+
  
  . Redirecting from OLD url to New url
  
